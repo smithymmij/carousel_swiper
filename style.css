@@ -1,0 +1,917 @@
+html, body {
+   font:100%/1.4 ;
+   font-family: 'Fregan Sans', 'arsenal-regular-webfont', 'opensans-condlight-webfont', 'sans-serif';
+   font-size-adjust:0.51;
+   margin:0;
+   padding:0;
+   background: url('img/maldivas_fundo_2.jpeg');
+   background-position:left -1.5rem top -4rem;
+   background-repeat:no-repeat;
+   background-size:100% 100%;
+   background-attachment:fixed;
+   overflow-x:hidden;
+   }
+* { 
+   box-sizing:border-box; 
+   }
+.tudo { 
+   max-width:70rem; 
+   margin:0 auto; 
+   }  
+h4 {
+   text-align:center;
+   margin:0; 
+   margin-left:2rem;
+   margin-top:1.5rem;
+   margin-right:2rem;
+   margin-bottom:1rem;
+   font-family:Arial, Times, serif;
+   letter-spacing:.2rem;
+   font-size: 1.5rem;
+   font-size-adjust:0.53;
+   }
+h1, h6 { 
+   margin: 0 ; 
+   color:#174b49;
+   margin-left:; 
+   margin-top:1.2rem;
+   padding:1rem;
+   font-size:4.3rem;
+   font-family:'Fregan Sans Bold', arial;
+   }
+h6 {
+   text-align:left;
+   padding:0;
+   }
+top {
+   display:flex;
+   display: -webkit-flex;
+   align-items: center;
+   justify-content: center;
+   width:100vw;
+   height:0;
+   max-width:100%;
+   background-color:#124849;
+   }
+header {
+   display:flex;
+   display: -webkit-flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0;
+   padding:0;
+   width:100vw;
+   height:12rem;
+   max-width:100%;
+   background: #124849; 
+   font-family:arial;
+   }
+.logo_cabeçalho {
+   display:flex;
+   display: -webkit-flex;
+   align-items: center;
+   justify-content: center;
+   width:18vw;
+   background:none;
+   }
+.logo_cabeçalho img {
+   width:15.6rem;
+   }   
+
+nav {
+   display:flex;          /*para suporte nativo*/
+   display: -webkit-flex; /*para safari e opera*/
+   align-items: center;
+   justify-content: center;
+   width:100vw;
+   height:2.4rem;
+   max-width:100%; /*evita barra de rolagem horizontal*/
+   margin:0;
+   background:#cfaf9a;
+   border-bottom:solid 1px #124849;
+   z-index:999;/*para paginatio não passar por cima, quando o menu flutuar*/
+   }
+   
+/* Style Menu */
+#menu {
+   display:flex;          /*para suporte nativo*/
+   display: -webkit-flex; /*para safari e opera*/
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   max-width:80rem;
+   height:30px;
+   list-style: none;
+   font-family: 'Fregan Sans';
+   font-size:.9rem;
+   background: none;
+   margin-left:-42px;
+   }
+#menu li { 
+   float: left;
+   }
+#menu li a {
+   display:block;
+   height:30px;/*tive que declarar isso por causa do Explorer e chrome*/
+   text-decoration: none;
+   margin-right: 20px;
+   padding: .5rem 1.25rem .5rem 1.25rem;
+   clear:both;
+   position:relative;
+   letter-spacing:1px;
+   top:0px;
+   left:0px;
+   color:black;
+   }
+#menu li a:hover {
+   color: #124849;
+   text-shadow:1px 1px 1px #000;
+   }
+
+/*Inicio menu rodapé*/   
+.menu_rodape {
+   display:flex;          /*para suporte nativo*/
+   display: -webkit-flex; /*para safari e opera*/
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   max-width:80rem;
+   height:30px;
+   list-style: none;
+   font-family: 'Fregan Serif';/*'barrio-regular-webfont';*/
+   font-size:1rem;
+   background: none;
+   margin-left:-35px;
+   margin-top:2rem;
+   }
+.menu_rodape li { 
+   float: left;
+   }
+.menu_rodape li a {
+   display:block;
+   height:30px;/*tive que declarar isso por causa do Explorer e chrome*/
+   text-decoration: none;
+   margin-right: 10px;
+   padding: .7rem 1.25rem .8rem 1.25rem;
+   clear:both;
+   position:relative;
+   top:0px;
+   left:0px;
+   color:#fff;
+   }
+.menu_rodape li a:hover {
+   color: #e59389;
+   text-shadow:1px 1px 1px #000;
+   }
+/*Fim menu rodape*/
+
+section {
+   display:flex;
+   display: -webkit-flex; /*para safari e opera*/
+   align-items: center;
+   justify-content: center;
+   width:100%;
+   max-width:100%;
+   min-height:28rem;
+   background-color:transparente;
+   backdrop-filter: blur(0px);
+   transition: 1s;
+   }
+section:hover { 
+   backdrop-filter: blur(3px); 
+   }
+.janela {
+   display:flex;
+   display: -webkit-flex; /*para safari e opera*/
+   align-items: center;
+   justify-content: center;
+   width:100%;
+   max-width:100%;
+   min-height:28rem;
+   }
+   
+/*section:hover { backdrop-filter: blur(8px); }*/
+.janela h1 {
+   font-family:'Fregan Serif Bold';
+   font-size:8rem;
+   }
+    
+/*Para deixar efeito areia apenas na página principal*/    
+principal {
+   display:flex;
+   display: -webkit-flex; /*para safari e opera*/
+   align-items: center;
+   justify-content: center;
+   width:100%;
+   max-width:100%;
+   min-height:28rem;
+   background-color:transparent;
+   backdrop-filter: blur(0px);
+   transition: .5s;
+    }
+principal:hover { 
+   backdrop-filter: blur(3px); 
+   }
+/*fim*/
+
+footer { 
+   background:#e57741;
+   width:100%;
+   min-height:60vh;
+   height:10%; 
+   display:flex;
+   display: -webkit-flex;
+   flex-direction:column;
+   -webkit-flex-direction:column;
+   align-items: center;
+   margin:.8rem 0 0;
+   padding:.4rem;
+   text-decoration:inherit;
+   color:#fff;
+   }
+
+ /*inicio da galeria principal*/
+
+/*fim da galeria principal*/
+
+/*inicio da galeria para celular*/
+.galeria_mobile {
+   display: flex;
+   display: -webkit-flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   font-family: 'Fregan Serif Bold';
+   width:80vw;
+   max-width:100%;
+   margin-top:2rem;
+   display:none;
+   }
+.galeria_mobile .grid-container {
+   columns: 1 400px;
+   column-gap: 1.5rem;
+   width: 80vw;
+   max-width:100%;
+   margin:0;
+   }
+.galeria_mobile .grid-container  .grid {
+   width: 150px;
+   margin: 0 1.5rem 1.5rem 0;
+   display: inline-block;
+   width: 80vw;
+   max-width:100%;
+   border: solid 0px #e59389;
+   padding: 0px;
+   box-shadow: 0 3px 3px rgba(0,0,0,0.4);
+   border-radius: 4px;
+   }
+.galeria_mobile .grid-container img {
+   width: 100%;
+   border-radius:4px 4px 0px 0px;
+   }
+.galeria_mobile .grid-container p {
+   margin: 5px 0;
+   padding: 0;
+   text-align: center;
+   font-family:'Fregan Sans Bold';
+   color:#124849;
+   }
+/*fim galeria para celular*/
+
+/*inicio galeria para anuncios publicados*/  
+.galeria_anuncios {
+   display: flex;
+   display: -webkit-flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   font-family: 'Fregan Sans';
+   width:100%;
+   max-width:50rem;
+   }
+.grid_texto {
+   width:100%;
+   max-width:50rem;
+   background:#124849;
+   margin-top:4rem;
+   padding-left:60px;
+   padding-right:60px;
+   display: flex;
+   display: -webkit-flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   box-shadow: 0 0 0 .1rem rgba(0,0,0,0.1);
+   opacity:.96;
+   }
+.grid_texto h1 {
+   font-size:2.5rem;
+   font-family:'Fregan Sans';
+   text-align:center;
+   line-height:;
+   letter-spacing:2px;
+   color:black;
+   }
+.detalhes {
+   display: flex;
+   display: -webkit-flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   font-size:1.1rem;
+   text-align:center;
+   margin-top:1rem;
+   letter-spacing:2px;
+   color:rgba(0,0,0,0.8);
+   line-height:28px;
+   }
+.detalhes img {
+   width:20px; 
+   margin-bottom:-2px; 
+   margin-right:20px;
+   }
+.grid_texto .valor {
+   font-size:5rem;
+   text-align:center;
+   line-height:;
+   letter-spacing:2px;
+   color:#e57741;
+   }
+.grid_texto .barra {
+   background: #124849;
+   width:50rem;
+   height:15rem;
+   min-height:15rem;
+   display: flex;
+   display: -webkit-flex;
+   justify-content:center;
+   align-items: left;
+   flex-direction: column;
+   padding-left:60px;
+   padding-right:60px;
+   margin-top:2rem;
+   margin-bottom:2rem;
+   } 
+.grid_texto .barra p {
+   font-size:1rem;
+   font-family:'Fregan Sans';
+   letter-spacing:0.2rem;
+   margin-right:25px;
+   opacity:;
+   color:#fff;
+   }
+.grid_texto .barra img {
+   width:20px; 
+   margin-bottom:-2px; 
+   margin-right:20px;
+   }
+.grid_texto .barra .ico-area {
+   width:20px; 
+   margin-right:20px;
+   margin-bottom:-3px;
+   }
+.grid_texto .barra .ico-quarto {
+   width:20px; 
+   margin-right:15px;
+   margin-bottom:-4px;
+   }
+.grid_texto .detalhes .ico-dow {
+   width:30px; 
+   margin-right:15px;
+   margin-bottom:2rem;
+   }
+
+.grid_texto .detalhes .ico-dow:hover { 
+   animation-name:pular; 
+   animation-duration:.5s; 
+   animation-iteration-count:infinite; 
+   }
+@keyframes pular {
+   0%{margin-top:0px; }
+   50%{margin-top:-20px; }
+   50%{padding-bottom:20px; }
+   100%{margin-top:0px; }
+   }
+.grid_texto .detalhes .ico-up {
+   width:30px; 
+   margin-right:15px;
+   margin-bottom:-4px;
+   }
+.grid_texto .detalhes .ico-up:hover { animation-name:pular; animation-duration:.5s; animation-iteration-count:infinite; }
+@keyframes pular {
+   0%{margin-top:0px; }
+   50%{margin-top:-15px; }
+   50%{padding-bottom:15px; }
+   100%{margin-top:0px; }
+   }
+.titulo_anuncio {
+   background:#e57741;
+   padding:10px;
+   margin-top:-40px;
+   margin-bottom:2rem;
+   box-shadow: 0 3px 3px rgba(0,0,0,0.4);
+   }  
+.titulo_anuncio h1 {color:#fff; opacity:1; }  
+.titulo_lugar h1 {
+   background:transparent;
+   color:#124849;
+   font-size:4.3rem;
+   margin-bottom:2rem;
+   text-shadow: 0px 0px 1px rgba(255,255,255,0.9);
+   }
+#mostrarMais {
+    display:none;
+    }
+.btnLeiaMais {
+   cursor: pointer; 
+   color:black; 
+   opacity:.8; 
+   font-size:.8rem; 
+   padding:20px;
+   }
+.detalhes100 {
+   text-align:center; 
+   margin-bottom:2rem;
+   margin-top:4rem;
+   }
+.cod{font-size:1.2rem;color:rgba(255,255,255,0.9); }
+.detalhes h2 {
+   font-size:1.5rem; 
+   text-align:justify; 
+   margin-top:2rem; 
+   letter-spacing:2px;
+   }
+
+
+
+/*fim para o texto das paginas que contem os anuncios*/
+
+/*inicio galeria comprar alugar (pagina imóveis)*/
+.comprar {
+   display: flex;
+   display: -webkit-flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   font-family: 'Fregan Serif Bold';
+   width:100%;
+   max-width:100vw;
+   margin-top:2rem;
+   }
+.comprar .grid-container {
+   display: flex;
+   display: -webkit-flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   width: 70rem;
+   max-width:70rem;
+   margin:0;
+   }
+.grid-container ol {
+   display: flex;
+   display: -webkit-flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row; 
+   flex-wrap:wrap;
+   margin-left:-1.8rem;
+   }
+.comprar .grid-container  .grid {
+   width:20rem;
+   height:20rem;
+   max-height:21rem;
+   margin: 0 1.5rem 1.5rem 0;
+   display: inline-block;
+   border: solid 0px #e59389;
+   padding: 0px;
+   box-shadow: 0 3px 3px rgba(0,0,0,0.4);/*0 0 0 .1rem rgba(0,0,0,0.1)*/
+   border-radius: 4px;
+   background:#fff;
+   }
+.comprar .grid-container a img {
+   width: 20rem;
+   height:12rem;
+   max-height:12rem;
+   border-radius: 4px 4px 0 0;
+   }
+.comprar .grid-container  .grid p img {  
+   width:8px;
+   margin-right:10px;
+   margin-left:20px;
+   }
+.comprar .grid-container  .grid h3 {
+   font-size:.8rem;
+   font-family:'Fregan Sans';
+   margin-left:20px;
+   color:#124849;
+   }   
+.comprar .grid-container p {
+   margin: 5px 0;
+   padding: 0;
+   text-align: left;
+   font-family:'Fregan Sans';
+   color:#124849;
+   font-size:.6rem;
+   opacity:0.8;
+   }
+.comprar .input-buscar { 
+   display: flex;
+   display: -webkit-flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   }
+.comprar input { 
+   width:35rem; 
+   padding:20px;
+   padding-left:65px; 
+   margin-bottom:1rem; 
+   letter-spacing:1px;
+   font-size:.9rem;
+   box-shadow: 1px 1px 3px 3px rgba(0,0,0,0.2);
+   border:none;  
+   outline-style:none;
+   writing-mode: horizontal-tb !important;
+   }   
+.comprar .ico-bus {
+   width:30px;
+   -webkit-mask-repeat: no-repeat;
+   -webkit-mask-size: 16px;
+   background-repeat: no-repeat;
+   background-size: 16px;
+   opacity:0.5;
+   margin-left:-500px;
+   position:absolute;
+   }
+/*fim galeria comprar alugar (pagina imóveis)*/
+
+/*inicio da pagina Vender*/
+ .vender {
+   display: flex;
+   display: -webkit-flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   font-family: 'Fregan Serif Bold';
+   width:100%;
+   min-height:38rem;
+   max-width:60rem;
+   background:;
+   }  
+.vender img {
+   width:23rem;
+   max-width:23rem;
+   opacity:.7;
+   box-shadow: 0 3px 3px rgba(0,0,0,0.4);
+   } 
+/*fim pagina vender*/
+
+/*inicio formulario vender*/ 
+.vender form {
+   display: flex;
+   display: -webkit-flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   width:30rem;
+   max-width:30rem;
+   height:34.5rem;
+   margin-top:2rem;
+   margin-bottom:2rem;
+   padding:10px;
+   border-radius:0 18px 18px 0;
+   font-family:'Fregan Sans' ;
+   font-size: .9rem;
+   background-color: #124849;
+   opacity:.96;
+   box-shadow: 0 3px 3px rgba(0,0,0,0.4);
+   }
+input, textarea {
+   width: 25rem;
+   padding: 5px;
+   color: black;
+   margin-top: 10px;
+   border-radius:3px;
+   border: 1px solid;
+   font-family:'Fregan Sans';
+   font-size:.8rem;
+   }
+.input100{
+   display:flex;
+   flex-direction: column;
+   width:12.54rem;
+   }
+.input101 {
+   display: flex;
+   display: -webkit-flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   padding:10px;
+   font-size: 15px;
+   } 
+.vender label {
+   font-size:.7rem;
+   }
+.vender p {
+   color:#fff; 
+   font-family:'Fregan Sans'; 
+   letter-spacing:.1rem;
+   text-align:center; 
+   font-size:.9rem;
+   margin-bottom:0;
+   margin-top:20px; 
+   }
+.enviar {
+   background-color: #e57741;
+   height: 32px;
+   width: 90px;
+   letter-spacing:1px;
+   border:0;
+   color: black;
+   }
+textarea {
+   width: 25rem;
+   height: 5rem;
+   max-width: 25rem;
+   }
+form label {
+   margin-left:;
+   color: #fff;
+   }
+/*fim formulario verder*/
+
+/*inicio icones redes sociais*/
+.redes_sociais {
+   margin-top:3rem;
+   }
+.redes_sociais li {
+   display: inline-block;
+   padding:6px;
+   }
+.redes_sociais ul li {
+   display: inline-block;
+   }
+/*fim redes sociais*/
+
+/*icicio das informações dados_empresa no roda pé*/
+.dados_empresa {
+   display:flex;
+   display: -webkit-flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   margin:0;
+   font-family:'Fregan Sans';
+   } 
+.dados_empresa p {
+   font-size:1rem;
+   margin-top:2px;
+   margin-bottom:2px;
+   }
+.dados_empresa h2 {
+   font-size:1.8rem;
+   }
+.telefone {
+   margin-top:10px;
+   }   
+.telefone a {
+   font-size:.9rem;
+   text-decoration:none;
+   padding:2px;
+   color:#fff;
+   }
+.telefone a:hover {color:; } 
+.criação {margin-top:5rem; }  
+.criação p{ margin-left:; font-size:.8rem;}
+/*fim*/
+
+/*inicio pagina informações - maps*/
+.info_bloco {
+   display:flex;
+   display: -webkit-flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   background:transparent;
+   color:black;
+   width:60rem;
+   font-family:'Fregan Sans';
+   }
+.fachada_loja img {
+   width:23rem;
+   height:30rem;
+   max-width:23rem;
+   opacity:.7;
+   box-shadow: 0 3px 3px rgba(0,0,0,0.4);
+   margin-top:2.3rem;
+   }  
+.informações{
+   display:flex;
+   display: -webkit-flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   width:30rem;
+   height:30rem;
+   text-align:justify;
+   font-family:'Fregan Sans bold';
+   margin-top:2rem;
+   background:#124849;
+   opacity:0.96;
+   border-radius:0 18px 18px 0;
+   box-shadow: 0 3px 3px rgba(0,0,0,0.4);
+   color:#fff;
+   padding:40px;
+   }
+.cell {
+   margin-top:2rem; 
+   font-size:1rem;
+   }
+.cell a {
+   margin-left:10px; 
+   }
+.email {
+   text-align:center; 
+   margin-top:15px;
+   }
+.informações img {
+   width:60px; 
+   margin-bottom:-10px; 
+   }
+.informações .ico-telefone {
+   width:50px; 
+   margin-bottom:-10px; 
+   margin-top:20px;
+   }
+.informações a { 
+   text-decoration:none;
+   font-family:'Fregan Sans';
+   color:#fff;
+   background:none;
+   display: inline-block;
+   width: max-content;
+   letter-spacing:1px;
+   } 
+.informações p{
+   margin-bottom:20px; 
+   letter-spacing:1px; 
+   }
+.maps{
+   display:flex;
+   display: -webkit-flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   width:53rem;
+   max-width:53rem;
+   margin-top:1rem;
+   margin-bottom:2rem;
+   background:transparent;
+   padding:0px;
+   }
+.maps iframe { 
+   padding:0px;
+   width:23.7rem;
+   max-width:23.7rem; 
+   height:18rem;
+   box-shadow: 0 3px 3px rgba(0,0,0,0.4);
+   }
+.maps100{
+   display:flex;
+   display: -webkit-flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding:40px; 
+   text-align:center;
+   letter-spacing:1px;
+   background:#124948;
+   opacity:0.96;
+   color:#fff; 
+   width:30.5rem;
+   max-width:30.5rem;
+   height:18rem; 
+   border-radius:0 18px 18px 0;
+   box-shadow: 0 3px 3px rgba(0,0,0,0.4);
+   }
+.maps100 img {
+   width:100px; 
+   margin-top:20px; 
+   }
+/*Fim pagina informações - maps*/   
+
+/*Inicio carrossel-anuncios*/
+.image_carousel {
+   display:flex;
+   display: -webkit-flex;
+   flex-direction: column;
+   padding: 0;
+   position: relative;
+   margin-top:3rem;
+   margin-bottom:1rem;
+   width:100%;
+   max-width:70vw;
+   height:30rem;
+   box-shadow: 0 3px 3px rgba(0,0,0,0.4);
+   overflow: hidden;
+   }
+.image_carousel img {
+   border: 1px solid #ccc;
+   background-color: white;
+   padding: 9px;
+   margin:;
+   display: block;
+   float: left;
+   width:100%;
+   max-width:50rem;
+   height:30rem;
+   }
+a.prev, a.next {
+   background: url(img/sprit.png) no-repeat transparent;
+   width: 45px;
+   height: 50px;
+   display: block;
+   position: absolute;
+   top: 40%;
+   }
+/*inicio setas de navegação galeria anuncio*/
+.image_carousel span:before,
+.image_carousel span:after {
+   color: #fff;
+   display: block;
+   background: rgba(0,0,0,0.2);
+   position: absolute;
+   padding: 1rem;
+   font-size: 3rem;
+   height: 10rem;
+   vertical-align: middle;
+   line-height: 10rem;
+   top: 50%;
+   transform: translate3d(0, -50%, 0);
+   cursor: pointer;
+   }
+.image_carousel span:before {
+   content: "\276D";
+   right: 100%;
+   border-top-left-radius: 50%;
+   border-bottom-left-radius: 50%;
+   }
+.image_carousel span:after {
+   content: "\276C";
+   left: 100%;
+   border-top-right-radius: 50%;
+   border-bottom-right-radius: 50%;
+   }
+/*fim setas de navegação*/
+a.prev { 
+   left: -36px;
+   background-position: 0 0; 
+   }
+a.next {
+   right: -36px;
+   background-position: -50px 0; 
+   }
+a.prev span, a.next span {
+   display: block;
+   }
+.pagination {
+   text-align: center;
+   }
+.pagination a {
+   background: url(img/sprite.png) 0 -160px no-repeat transparent;
+   width: 15px;
+   height: 15px;
+   margin: 0 5px 0 0;
+   display: inline-block;
+   }
+.pagination a.selected {
+   background-position: -50px -160px;
+   cursor: default;
+   }
+.pagination a span {
+   display: none;
+   }
+.clearfix {
+   float: none;
+   clear: both;
+   }
+/*fim carrossel*/
+
+/*whatsapp tremer*/
+.whatsapp i:hover {
+   animation: tremer .2s;
+   animation-iteration-count: 3;
+   }
+@keyframes tremer {
+   0% {margin-left: 0;}
+   25% {margin-left: 7px;}
+   50% {margin-left: 0;}
+   75% {margin-left: -7px;}
+   100% {margin-left: 0;}
+   }   
+ /*fim*/
+
+
+
