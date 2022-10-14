@@ -4,7 +4,7 @@ html, body {
    font-size-adjust:0.51;
    margin:0;
    padding:0;
-   background: url('maldivas_fundo_2.jpeg');
+   background: url('./maldivas_fundo_2.jpeg');
    background-position:left -1.5rem top -4rem;
    background-repeat:no-repeat;
    background-size:100% 100%;
